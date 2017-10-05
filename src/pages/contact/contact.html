@@ -1,0 +1,96 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Settings
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-list-header></ion-list-header>
+    <ion-list radio-group [(ngModel)]="Setting1">
+      
+        <ion-list-header>
+          Setting1
+        </ion-list-header>
+
+        <ion-item>
+          <ion-label>Enable TapAttend</ion-label>
+          <ion-toggle [(ngModel)]="Enable"></ion-toggle>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>a setting</ion-label>
+          <ion-radio value="cord"></ion-radio>
+        </ion-item>
+      
+        <ion-item>
+          <ion-label>a setting</ion-label>
+          <ion-radio value="duesenberg"></ion-radio>
+        </ion-item>
+      
+      </ion-list>
+
+      <ion-list radio-group [(ngModel)]="Setting2">
+      
+        <ion-list-header>
+          Setting2
+        </ion-list-header>
+      
+        <ion-item>
+          <ion-label>a setting</ion-label>
+          <ion-radio value="cord"></ion-radio>
+        </ion-item>
+      
+        <ion-item>
+          <ion-label>a setting</ion-label>
+          <ion-radio value="duesenberg"></ion-radio>
+        </ion-item>
+      
+      </ion-list>
+
+      <ion-list radio-group [(ngModel)]="SetLateTime">
+        
+          <ion-list-header>
+            Set Late Time
+          </ion-list-header>
+
+          <!--
+          <ion-item>
+            <ion-range min="0" max="60" [(ngModel)]="saturation" color="secondary" pin="true">
+              <ion-label range-left>0</ion-label>
+              <ion-label range-right>60 min</ion-label>
+            </ion-range>
+          </ion-item>
+        -->
+          <ion-item>
+            <ion-label>Set late time</ion-label>
+            <ion-select [(ngModel)]="lateTime">
+              <ion-option value="15">15 minutes</ion-option>
+              <ion-option value="30">30 minutes</ion-option>
+              <ion-option value="45">45 minutes</ion-option>
+              <ion-option value="60">1 hour</ion-option>
+            </ion-select>
+          </ion-item>
+        <!--
+          <ion-item>
+            <ion-label>10 minutes</ion-label>
+            <ion-radio value="cord"></ion-radio>
+          </ion-item>
+        
+          <ion-item>
+            <ion-label>20 minutes</ion-label>
+            <ion-radio value="duesenberg"></ion-radio>
+          </ion-item>
+        -->
+        </ion-list>
+
+      
+    <!--  Original code
+      <ion-item>
+      <ion-icon name="ionic" item-start></ion-icon>
+      @ionicframework
+    </ion-item> -->
+  </ion-list>
+</ion-content>

@@ -1,0 +1,39 @@
+<!--<div id="custom-overlay" [style.display]="splash ? 'flex': 'none'">
+  <div class="flb">
+    <div class="Aligner-item Aligner-item--top"></div>
+    <img src="assets/logo.png">
+    <div class="Aligner-item Aligner-item--bottom"></div>
+  </div>
+</div>
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <p align="center"></p><h2>Welcome to Tap Attend</h2>
+<p>
+    <p align="center"><ion-img width="80" height="80" src="assets/avatar.jpg"> </ion-img>
+</p>
+  <p>
+    This starter project comes with simple tabs-based layout for apps
+    that are going to primarily use a Tabbed UI.
+  </p>
+  <p>
+    Take a look at the <code>src/pages/</code> directory to add or change tabs,
+    update any existing page or create new pages.
+  </p>
+  <!-- idk how to space between buttons -->
+  <button ion-button full (click)="courseClick();">
+    Courses
+  </button>
+  .
+  <button ion-button full (click)="attendClick();">
+    Attendence
+  </button>
+  .
+  <button ion-button full >Settings</button>
+
+</ion-content>
