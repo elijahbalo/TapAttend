@@ -9,7 +9,7 @@
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
-    <allow-intent href="sms:*" />
+    <allow-intenmn m t href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
     <preference name="webviewbounce" value="false" />
@@ -24,9 +24,12 @@
       Change these to configure how the splashscreen displays and fades in/out.
       More info here: https://github.com/apache/cordova-plugin-splashscreen
     -->
+
+    <preference name="SplashScreenDelay" value="0"/>
+    <preference name="ShowSplashScreen" value="false"/>
     <preference name="SplashShowOnlyFirstTime" value="false" />
     <preference name="SplashScreen" value="screen" />
-    <preference name="SplashScreenDelay" value="3000" />
+    <!--<preference name="SplashScreenDelay" value="3000" />-->
     <platform name="android">
         <allow-intent href="market:*" />
         <icon density="ldpi" src="resources/android/icon/drawable-ldpi-icon.png" />

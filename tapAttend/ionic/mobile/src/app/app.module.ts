@@ -2,10 +2,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
-
+/*
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
-
-
+import { ItemDetailsPage } from '../pages/item-details/item-details';
+import { ListPage } from '../pages/list/list';
+*/
+import { AboutPage } from '../pages/about/about';
+import { SettingsPage } from '../pages/contact/contact';
+import { HomePage } from '../pages/home/home';
+import { TabsPage } from '../pages/tabs/tabs';
+import { CoursePage} from '../pages/courses/courses';
+import { AttendPage} from '../pages/attend/attend';
+import { SignPage} from '../pages/sign/sign';
+import { ProfilePage} from '../pages/profile/profile';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -14,9 +23,14 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 @NgModule({
   declarations: [
     MyApp,
-    HelloIonicPage,
-    
-
+    AboutPage,
+    SettingsPage,
+    HomePage,
+    CoursePage,
+    AttendPage,
+    SignPage,
+    ProfilePage,
+    TabsPage
   ],
   imports: [
     BrowserModule,
@@ -25,9 +39,14 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HelloIonicPage,
-    
-    
+    AboutPage,
+    SettingsPage,
+    HomePage,
+    CoursePage,
+    AttendPage,
+    SignPage,
+    ProfilePage,    
+    TabsPage
   ],
   providers: [
     StatusBar,
