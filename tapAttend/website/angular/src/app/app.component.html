@@ -1,3 +1,33 @@
-<h1>
-  {{title}}
-</h1>
+ <div class="navbar navbar-default ">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="../" class="navbar-brand">Tap Attend</a>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+          <ul class="nav navbar-nav">
+            <li>
+              <a routerLink="home" >Home</a>
+            </li>
+             <li>
+              <a routerLink="attendance" >Attendance</a>
+            </li>
+             <li>
+              <a routerLink="course">Courses</a>
+            </li>
+          </ul> 
+          <ul class="nav navbar-nav navbar-right">
+            <li><a routerLink="">login</a></li>
+            <li><a routerLink="" >Sign up</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <router-outlet></router-outlet> 
+    </div>
