@@ -11,31 +11,48 @@
       <ion-title>Home</ion-title>
     </ion-navbar>
   </ion-header>
-  
+  <style>
+      .themetext {
+              color: rgba(74, 130, 243, 0.88);
+      }
+      </style>
   <ion-content padding>
-    <p ></p><h2 align="center" >Welcome to Tap Attend</h2>
+    
+      <p align="center"><ion-img style="width: 420px; 
+        height: 60px; background: transparent !important;" src="assets/wordtitle.png">
+        </ion-img> </p>
+    <!--<p ></p><h2 align="center" >Welcome to Tap Attend</h2>   -->
   <p>
-      <p align="center"><ion-img width="100" height="100" src="assets/avatar.jpg"> </ion-img>
-      </p>
-      <h4 align="center"> Username</h4>
+     <!-- <p align="center"><ion-img width="100" height="100" src="assets/avatar.jpg"> </ion-img>
+      </p> -->
+      <p align="center"><ion-img (click)="profileClick();" style="width: 100px; 
+        height: 100px; background: transparent !important;" src="assets/avatartheme.png">
+        </ion-img> </p>
+      <h4 class ="themetext" align="center"> Username</h4>
     <p>
-      This starter project comes with simple tabs-based layout for apps
-      that are going to primarily use a Tabbed UI.
+      
     </p>
     <p>
-      Take a look at the <code>src/pages/</code> directory to add or change tabs,
-      update any existing page or create new pages.
+      
     </p>
+    <style>
+      .firstbutton {
+        margin:100px 0 0 0;      
+        }
+        .nextbutton {
+        margin:20px 0 0 0;      
+        }
+      </style>
     <!-- idk how to space between buttons -->
-    <button ion-button full (click)="courseClick();">
+    <button class="firstbutton" ion-button full (click)="courseClick();">
       Courses
     </button>
-    .
-    <button ion-button full (click)="attendClick();">
+    
+    <button class="nextbutton" ion-button full (click)="attendClick();">
       Attendence
     </button>
-    .
-    <button ion-button full (click)="profileClick();">Profile</button>
+    
+    <button class="nextbutton" ion-button full (click)="profileClick();">Profile</button>
   
   </ion-content>
   
