@@ -1,0 +1,52 @@
+<div id="custom-overlay" [style.display]="splash ? 'flex': 'none'">
+    <div class="flb">
+      <div class="Aligner-item Aligner-item--top"></div>
+      <img src="assets/logo.png">
+      <div class="Aligner-item Aligner-item--bottom"></div>
+    </div>
+  </div>
+  
+  <ion-header>
+      <ion-navbar>
+        <ion-title>Sign Up</ion-title>
+      </ion-navbar>
+    </ion-header>
+    
+    <ion-content padding>
+      
+      <p align="center"><ion-img style="width: 300px; 
+        height: 300px; background: transparent !important;" src="assets/title.png">
+        </ion-img> </p>
+       
+        <h2> Create Account</h2>
+        
+      <p>
+          <ion-item>
+              <ion-label color="primary" floating>User Name</ion-label>
+              <ion-input></ion-input>
+            </ion-item>
+      </p>
+      <p>
+          <ion-item>
+              <ion-label color="primary" floating>Password</ion-label>
+              <ion-input></ion-input>
+            </ion-item>
+      </p>
+      <!-- idk how to space between buttons -->
+      .
+      <button ion-button full (click)="signClick();">
+        Sign Up
+      </button>
+  
+     
+  <!-- an idea not neccesary
+      <h2 style = "text-align:left;float:left;">Sign in</h2>
+      <h2 style = "text-align:right;float:right;">New User</h2>
+      <div>
+      <div align="left"> Sign In </div>
+      <div align="right"> New User </div>
+    </div>
+  
+  -->
+    </ion-content>
+    
