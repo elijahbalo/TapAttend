@@ -1,7 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule, ErrorHandler } from '@angular/core';
+import { NgModule, ErrorHandler, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
+
 /*
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { ItemDetailsPage } from '../pages/item-details/item-details';
@@ -14,6 +15,8 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { CoursePage} from '../pages/courses/courses';
 import { AttendPage} from '../pages/attend/attend';
 import { SignPage} from '../pages/sign/sign';
+import { SignUpPage} from '../pages/signup/signup';
+
 import { ProfilePage} from '../pages/profile/profile';
 
 
@@ -29,6 +32,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     CoursePage,
     AttendPage,
     SignPage,
+    SignUpPage,
     ProfilePage,
     TabsPage
   ],
@@ -45,6 +49,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     CoursePage,
     AttendPage,
     SignPage,
+    SignUpPage,
     ProfilePage,    
     TabsPage
   ],

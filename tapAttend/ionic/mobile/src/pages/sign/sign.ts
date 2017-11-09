@@ -3,6 +3,7 @@ import { NavController } from 'ionic-angular';
 //import { CoursePage } from '../courses/courses';
 //import { AttendPage } from '../attend/attend';
 import { TabsPage } from '../tabs/tabs';
+import { SignUpPage } from '../signup/signup';
 
 
 @Component({
@@ -21,6 +22,9 @@ export class SignPage {
      this.navCtrl.push(TabsPage);
   }
   
+  signUpClick(){
+    this.navCtrl.push(SignUpPage);
+ }
   ionViewDidLoad() {
     setTimeout(() => this.splash = false, 4000);
   }
