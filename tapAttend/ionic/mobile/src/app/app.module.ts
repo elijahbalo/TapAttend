@@ -16,6 +16,8 @@ import { CoursePage} from '../pages/courses/courses';
 import { AttendPage} from '../pages/attend/attend';
 import { SignPage} from '../pages/sign/sign';
 import { SignUpPage} from '../pages/signup/signup';
+import { SignUpPage1} from '../pages/signup1/signup1';
+import { SignUpPage2} from '../pages/signup2/signup2';
 
 import { ProfilePage} from '../pages/profile/profile';
 
@@ -33,6 +35,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AttendPage,
     SignPage,
     SignUpPage,
+    SignUpPage1, 
+    SignUpPage2,    
     ProfilePage,
     TabsPage
   ],
@@ -50,6 +54,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AttendPage,
     SignPage,
     SignUpPage,
+    SignUpPage1, 
+    SignUpPage2,        
     ProfilePage,    
     TabsPage
   ],
