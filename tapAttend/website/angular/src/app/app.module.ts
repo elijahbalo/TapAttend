@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { HomePage} from '../pages/home/home';
+import { LoginPage} from '../pages/login/login';
+import { SignUpPage} from '../pages/signup/signup';
 import { CoursePage} from '../pages/course/course';
 import { AttendancePage} from '../pages/attendance/attendance';
 import { routes} from './app.router';
@@ -13,7 +15,9 @@ import { AppComponent } from './app.component';
     AppComponent,
     HomePage,
     AttendancePage,
-    CoursePage
+    CoursePage,
+    LoginPage,
+    
   ],
   imports: [
     BrowserModule,

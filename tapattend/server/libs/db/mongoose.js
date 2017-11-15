@@ -1,0 +1,25 @@
+var mongoose = require('mongoose');
+
+var libs = process.cwd() + '/libs/';
+
+var log = require(libs + 'log')(module);
+var config = require(libs + 'config');
+
+var options = {
+	server: { socketOptions: { keepAlive: 300000, connectTimeoutMS: 30000 } },
+	replset: { socketOptions: { keepAlive: 300000, connectTimeoutMS: 30000 } }
+};
+
+mongoose.connect('mongodb://elijah_balo:tapattenddb17@ds119565.mlab.com:19565/tapattend', options);
+
+var db = mongoose.connection;
+
+db.on('error', function (err) {
+	log.error('Connection error:', err.message);
+});
+
+db.once('open', function callback() {
+	log.info("Connected to DB!");
+});
+
+module.exports = mongoose;
