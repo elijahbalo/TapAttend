@@ -3,31 +3,30 @@ import { NavController } from 'ionic-angular';
 //import { CoursePage } from '../courses/courses';
 //import { AttendPage } from '../attend/attend';
 import { TabsPage } from '../tabs/tabs';
-import { SignUpPage } from '../signup/signup';
+import { SignPage } from '../sign/sign';
+import { SignUpPage1 } from '../signup1/signup1';
 
 
 @Component({
-  selector: 'page-sign',
-  templateUrl: 'sign.html'
+  selector: 'page-signup',
+  templateUrl: 'signup.html'
 })
 
-export class SignPage {
-    splash = true;
+export class SignUpPage {
+    //splash = true;
     //secondPage = SecondPagePage;
   
   constructor(public navCtrl: NavController) {
    // this.tabBarElement = document.querySelector('.tabbar');
     }
-    homeClick(){
-     this.navCtrl.push(TabsPage);
+    nextClick(){
+     this.navCtrl.push(SignUpPage1);
   }
   
-  signUpClick(){
-    this.navCtrl.push(SignUpPage);
- }
-  ionViewDidLoad() {
-    setTimeout(() => this.splash = false, 4000);
-  }
+  
+ // ionViewDidLoad() {
+   // setTimeout(() => this.splash = false, 4000);
+  //}
   
  
 }
