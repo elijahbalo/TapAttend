@@ -6,9 +6,18 @@
     </div>
   </div>
   
+  <style>
+    .themetext {
+            color: rgba(74, 130, 243, 0.88);
+    }
+    .space {
+          margin:175px 0 0 0; 
+    }
+    </style>
+
   <ion-header>
       <ion-navbar>
-        <ion-title>Sign In</ion-title>
+        <ion-title>Profile Picture</ion-title>
       </ion-navbar>
     </ion-header>
     
@@ -16,28 +25,23 @@
       <h2></h2>
       
       <p align="center"><ion-img style="width: 300px; 
-        height: 300px; background: transparent !important;" src="assets/title.png">
+        height: 150px; background: transparent !important;" src="assets/createAccount.png">
         </ion-img> </p>
       
-      <p>
-          <ion-item>
-              <ion-label color="primary" floating>User Name</ion-label>
-              <ion-input></ion-input>
-            </ion-item>
-      </p>
-      <p>
-          <ion-item>
-              <ion-label color="primary" floating>Password</ion-label>
-              <ion-input></ion-input>
-            </ion-item>
-      </p>
+
+        <p align="center"><ion-img style="width: 100px; 
+          height: 100px; background: transparent !important;" src="assets/avatartheme.png">
+          </ion-img> </p>
+          <h4 class="themetext" align="center"> Create profile picture</h4>
+          
+      
+      
       <!-- idk how to space between buttons -->
       .
-      <button ion-button full (click)="homeClick();">
-        Sign In
+      <button class= "space" ion-button full (click)="nextClick();">
+        Done
       </button>
   
-      <p align="center">Dont have an account? <a (click) ="signUpClick()"> Sign Up </a></p>
   <!-- an idea not neccesary
       <h2 style = "text-align:left;float:left;">Sign in</h2>
       <h2 style = "text-align:right;float:right;">New User</h2>

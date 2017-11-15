@@ -8,7 +8,7 @@ import { NavController } from 'ionic-angular';
 export class ProfilePage {
 
   constructor(public navCtrl: NavController) {
-
+   
   }
 
 }
