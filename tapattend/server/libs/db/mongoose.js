@@ -10,7 +10,7 @@ var options = {
 	replset: { socketOptions: { keepAlive: 300000, connectTimeoutMS: 30000 } }
 };
 
-mongoose.connect('mongodb://elijah_balo:tapattenddb17@ds119565.mlab.com:19565/tapattend', options);
+mongoose.connect('mongodb://capstone_tapattend:tapattend17@ds119565.mlab.com:19565/tapattend', options);
 
 var db = mongoose.connection;
 

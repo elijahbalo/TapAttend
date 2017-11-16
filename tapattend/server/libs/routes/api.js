@@ -9,4 +9,4 @@ router.get('/', passport.authenticate('bearer', { session: false }), function (r
     });
 });
 
-module.exports = router
+module.exports = router;

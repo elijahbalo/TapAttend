@@ -1,5 +1,5 @@
 {
-    "port": 8080,
+    "port": 1337,
     "security": {
         "tokenLife": 100000
     },
@@ -11,8 +11,8 @@
             "version": "v1"
         },
         "user": {
-            "username": "korede",
-            "password": "testUser"
+            "username": "elijah_balo",
+            "password": "Capstonedb17"
         },
         "client": {
             "name": "Android API v1",
