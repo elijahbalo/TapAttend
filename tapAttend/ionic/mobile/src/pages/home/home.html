@@ -28,7 +28,7 @@
       <p align="center"><ion-img (click)="profileClick();" style="width: 100px; 
         height: 100px; background: transparent !important;" src="assets/avatartheme.png">
         </ion-img> </p>
-      <h4 class ="themetext" align="center"> {{currentUser.username}}</h4>
+      <h4 class ="themetext" align="center" *ngIf="currentUser"> {{currentUser.username}}</h4>
     <p>
       
     </p>

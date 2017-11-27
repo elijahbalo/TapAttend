@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { CoursePage } from '../courses/courses';
+import { UserService } from './../../services/users.service';
 import { AttendPage } from '../attend/attend';
 import { ProfilePage } from '../profile/profile';
 @Component({
@@ -12,9 +13,13 @@ export class HomePage {
  // tabBarElement: any;
  // splash = true;
   currentUser;
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController,public userService: UserService,) {
     //this.tabBarElement = document.querySelector('.tabbar');
-     this.currentUser = JSON.parse(localStorage.getItem('userData'));
+           
+        this.currentUser = JSON.parse(localStorage.getItem('userData'));
+   
+  
+ 
     }
     courseClick(){
      this.navCtrl.push(CoursePage);
