@@ -4463,3 +4463,51 @@
 {"level":"info","message":"POST","timestamp":"2017-11-27T03:35:16.719Z"}
 {"level":"info","message":"OPTIONS","timestamp":"2017-11-27T03:36:52.422Z"}
 {"level":"info","message":"POST","timestamp":"2017-11-27T03:36:52.462Z"}
+{"level":"info","message":"Express server listening on port 1337","timestamp":"2017-11-27T04:35:19.233Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2017-11-27T04:35:19.472Z"}
+{"level":"info","message":"OPTIONS","timestamp":"2017-11-27T04:43:50.687Z"}
+{"level":"info","message":"POST","timestamp":"2017-11-27T04:43:50.973Z"}
+{"level":"info","message":"OPTIONS","timestamp":"2017-11-27T04:44:04.800Z"}
+{"level":"info","message":"POST","timestamp":"2017-11-27T04:44:04.816Z"}
+{"level":"info","message":"OPTIONS","timestamp":"2017-11-27T04:45:48.319Z"}
+{"level":"info","message":"POST","timestamp":"2017-11-27T04:45:48.338Z"}
+{"level":"info","message":"OPTIONS","timestamp":"2017-11-27T04:45:59.407Z"}
+{"level":"info","message":"POST","timestamp":"2017-11-27T04:45:59.420Z"}
+{"level":"info","message":"OPTIONS","timestamp":"2017-11-27T04:48:21.556Z"}
+{"level":"info","message":"POST","timestamp":"2017-11-27T04:48:21.576Z"}
+{"level":"info","message":"OPTIONS","timestamp":"2017-11-27T04:48:57.540Z"}
+{"level":"info","message":"POST","timestamp":"2017-11-27T04:48:57.561Z"}
+{"level":"info","message":"OPTIONS","timestamp":"2017-11-27T04:49:11.546Z"}
+{"level":"info","message":"POST","timestamp":"2017-11-27T04:49:11.558Z"}
+{"level":"info","message":"Express server listening on port 1337","timestamp":"2017-11-27T05:02:28.202Z"}
+{"level":"info","message":"Connected to DB!","timestamp":"2017-11-27T05:02:28.592Z"}
+{"level":"info","message":"OPTIONS","timestamp":"2017-11-27T05:05:56.477Z"}
+{"level":"info","message":"POST","timestamp":"2017-11-27T05:05:56.613Z"}
+{"level":"info","message":"11000","timestamp":"2017-11-27T05:05:56.734Z"}
+{"level":"info","message":"POST","timestamp":"2017-11-27T05:05:59.725Z"}
+{"level":"info","message":"11000","timestamp":"2017-11-27T05:05:59.809Z"}
+{"level":"info","message":"OPTIONS","timestamp":"2017-11-27T05:06:49.302Z"}
+{"level":"info","message":"POST","timestamp":"2017-11-27T05:06:49.313Z"}
+{"level":"info","message":"11000","timestamp":"2017-11-27T05:06:49.395Z"}
+{"level":"info","message":"OPTIONS","timestamp":"2017-11-27T05:07:56.502Z"}
+{"level":"info","message":"POST","timestamp":"2017-11-27T05:07:56.511Z"}
+{"level":"info","message":"11000","timestamp":"2017-11-27T05:07:56.634Z"}
+{"level":"info","message":"OPTIONS","timestamp":"2017-11-27T05:09:18.902Z"}
+{"level":"info","message":"POST","timestamp":"2017-11-27T05:09:18.916Z"}
+{"level":"info","message":"OPTIONS","timestamp":"2017-11-27T05:09:36.067Z"}
+{"level":"info","message":"POST","timestamp":"2017-11-27T05:09:36.073Z"}
+{"level":"info","message":"OPTIONS","timestamp":"2017-11-27T05:21:21.484Z"}
+{"level":"info","message":"POST","timestamp":"2017-11-27T05:21:21.508Z"}
+{"level":"info","message":"OPTIONS","timestamp":"2017-11-27T05:22:04.296Z"}
+{"level":"info","message":"POST","timestamp":"2017-11-27T05:22:04.314Z"}
+{"level":"info","message":"OPTIONS","timestamp":"2017-11-27T05:22:16.630Z"}
+{"level":"info","message":"POST","timestamp":"2017-11-27T05:22:16.647Z"}
+{"level":"info","message":"OPTIONS","timestamp":"2017-11-27T05:23:07.221Z"}
+{"level":"info","message":"POST","timestamp":"2017-11-27T05:23:07.241Z"}
+{"level":"info","message":"OPTIONS","timestamp":"2017-11-27T05:23:41.310Z"}
+{"level":"info","message":"POST","timestamp":"2017-11-27T05:23:41.330Z"}
+{"level":"info","message":"OPTIONS","timestamp":"2017-11-27T05:24:50.299Z"}
+{"level":"info","message":"POST","timestamp":"2017-11-27T05:24:50.319Z"}
+{"level":"info","message":"OPTIONS","timestamp":"2017-11-27T05:25:05.247Z"}
+{"level":"info","message":"POST","timestamp":"2017-11-27T05:25:05.265Z"}
+{"level":"error","message":"Connection error: Ran out of retries trying to reconnect to \"ds119565.mlab.com:19565\". Try setting `server.reconnectTries` and `server.reconnectInterval` to something higher.","timestamp":"2017-11-27T19:33:02.344Z"}
