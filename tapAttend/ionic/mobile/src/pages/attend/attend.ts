@@ -10,6 +10,4 @@ export class AttendPage {
     public NavParams: NavParams) {
 
   }
- 
-
 }

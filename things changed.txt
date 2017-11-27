@@ -1,0 +1,2 @@
+- added functionality to edit button on profile page
+- updated attendance page

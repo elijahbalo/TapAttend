@@ -1,0 +1,16 @@
+How to make thing more reflexive'!!
+
+Instead of making margins using px, use percentages instead, for the percent of the screen being used. 
+For example:
+
+.space {
+            margin:60px 0 0 0; 
+      }
+ 
+
+make it into...........
+
+
+.space {
+            margin:30% 0 0 0; 
+      }

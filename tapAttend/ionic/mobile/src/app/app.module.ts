@@ -9,6 +9,8 @@ import { ItemDetailsPage } from '../pages/item-details/item-details';
 import { ListPage } from '../pages/list/list';
 */
 import { AboutPage } from '../pages/about/about';
+import { AddCoursePage } from '../pages/addCourse/addCourse';
+
 import { SettingsPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
@@ -28,6 +30,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 @NgModule({
   declarations: [
     MyApp,
+    AddCoursePage,
     AboutPage,
     SettingsPage,
     HomePage,
@@ -48,6 +51,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     AboutPage,
+    AddCoursePage,
     SettingsPage,
     HomePage,
     CoursePage,

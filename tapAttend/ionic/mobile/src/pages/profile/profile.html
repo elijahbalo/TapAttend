@@ -42,19 +42,19 @@
     
     <ion-item class="spacing"  >
         <ion-label color="primary" fixed>Username</ion-label>
-        <ion-input readonly="true" type="tel" placeholder="Username" value="DanTheMan"></ion-input>
+        <ion-input readonly={{islocked}} type="tel" placeholder="Username" value="DanTheMan"></ion-input>
       </ion-item>
       <ion-item>
           <ion-label color="primary" fixed>First Name</ion-label>
-          <ion-input readonly="true" type="tel" placeholder="First Name" value="Dan"></ion-input>
+          <ion-input readonly={{islocked}} type="tel" placeholder="First Name" value="Dan"></ion-input>
         </ion-item>
         <ion-item>
             <ion-label color="primary" fixed>Last Name</ion-label>
-            <ion-input readonly="true" type="tel" placeholder="Last Name" value="Ionescu" ></ion-input>
+            <ion-input readonly={{islocked}} type="tel" placeholder="Last Name" value="Ionescu" ></ion-input>
           </ion-item>
           <ion-item>
               <ion-label color="primary" fixed>Student ID</ion-label>
-              <ion-input readonly="true" type="tel" placeholder="Student ID" value="1234567"></ion-input>
+              <ion-input readonly={{islocked}} type="tel" placeholder="Student ID" value="1234567"></ion-input>
             </ion-item>
 </ion-list>
              
@@ -63,7 +63,7 @@
                   margin:40px 0 0 0;      
                   }
                 </style>
-            <button class = "bottombutton" ion-button full>
+            <button (click)="editClick();" class = "bottombutton" ion-button full>
                 Edit
               </button>
   

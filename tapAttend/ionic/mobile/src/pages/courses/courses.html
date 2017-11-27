@@ -7,14 +7,66 @@
   
   <ion-content padding>
     <!--<h2>This page shows a list of your courses</h2> -->
-   
+   <!--
+    <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+<ion-list>
+  <ion-item *ngFor="let item of items">
+    {{ item }}
+  </ion-item>
+</ion-list>
+-->
       <ion-list>
-        <ion-list-header class="space">All Courses</ion-list-header>
+        <ion-list-header class="space; themetext">All Courses
+            <ion-icon (click)="addClick();" class="addSpace" name="ios-add" align="right" style="width:25px !important; 
+            height:  50px !important; font-size: 2.75em;"></ion-icon>
+            
+        </ion-list-header>
 
-        <ion-item (click)="attendClick();">
-          <ion-label >CSI2110 Data Structures And Algorithms</ion-label>
-        </ion-item>
+        <ion-item-sliding (ionSwipe)="delete(item)" >
+          <ion-item (click)="attendClick();">CSI2110 Data Structures And Algorithms</ion-item>
+          <ion-item-options>
+              <button ion-button color="danger" (click)="delete(item)">
+               <ion-icon name="trash" (click)="delete(item)">
+              </ion-icon></button>
 
+             <!-- <ion-icon name="trash" (click)="delete(item)"></ion-icon> -->
+                </ion-item-options>    
+        </ion-item-sliding>
+
+        
+        <ion-item-sliding (ionSwipe)="delete(item)" >
+            <ion-item (click)="attendClick();">CEG4136 Computer Architecture</ion-item>
+            <ion-item-options>
+                <button ion-button color="danger" (click)="delete(item)">
+                 <ion-icon name="trash" (click)="delete(item)">
+                </ion-icon></button>
+  
+               <!-- <ion-icon name="trash" (click)="delete(item)"></ion-icon> -->
+                  </ion-item-options>    
+          </ion-item-sliding>
+          
+        <ion-item-sliding (ionSwipe)="delete(item)" >
+            <ion-item (click)="attendClick();">SEG3102 Software Design and Architecture</ion-item>
+            <ion-item-options>
+                <button ion-button color="danger" (click)="delete(item)">
+                 <ion-icon name="trash" (click)="delete(item)">
+                </ion-icon></button>
+  
+               <!-- <ion-icon name="trash" (click)="delete(item)"></ion-icon> -->
+                  </ion-item-options>    
+          </ion-item-sliding>
+          
+        <ion-item-sliding (ionSwipe)="delete(item)" >
+            <ion-item (click)="attendClick();">ELG3125 Signals And Systems Analysis</ion-item>
+            <ion-item-options>
+                <button ion-button color="danger" (click)="delete(item)">
+                 <ion-icon name="trash" (click)="delete(item)">
+                </ion-icon></button>
+  
+               <!-- <ion-icon name="trash" (click)="delete(item)"></ion-icon> -->
+                  </ion-item-options>    
+          </ion-item-sliding>
+          <!--
         <ion-item (click)="attendClick();">
           <ion-label>CEG4136 Computer Architecture</ion-label>
         </ion-item>
@@ -27,6 +79,7 @@
         <ion-item (click)="attendClick();">
           <ion-label>ELG3125 Signals And Systems Analysis</ion-label>
         </ion-item>
+      -->
       </ion-list>
 
       <style>
@@ -38,6 +91,17 @@
           }
           .space {
             margin:60px 0 0 0; 
+          }
+          .headerSpace {
+            margin:10px 0 0 0; 
+          }
+          .addSpace {
+            margin:0 0 0 225px; 
+          }
+          .themetext {
+              color: rgba(74, 130, 243, 0.88);
+      }
+
         </style>
 
 <!--
@@ -51,7 +115,7 @@
           <ion-icon name="minus"></ion-icon>
         </button>
 
-      -->
+     
      
     <button class = "firstbutton" ion-button full>
         Add Courses
@@ -59,5 +123,5 @@
       <button class = "nextbutton" ion-button full>
         Delete Courses
       </button>
-    
+     -->
   </ion-content>
