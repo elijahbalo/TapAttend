@@ -1,11 +1,7 @@
-// Imports
 import { UrlProvider } from "../util/url-provider";
 import { Injectable } from '@angular/core';
-//import {Http, Response, Headers, RequestOptions} from '@angular/http';
 import { Http, Headers } from '@angular/http';
-
 import { Observable } from 'rxjs/Observable';
-
 //Import RxJs required methods
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
@@ -16,7 +12,7 @@ export class AuthService {
   // Resolve HTTP using the constructor
   constructor(private http: Http) { }
   // private instance variable to hold base url
-  private id_secret_Url = UrlProvider.url + '/api/oauth/token';
+  private url = UrlProvider.url + '/api/oauth/token';
 
 
   signIn(username, password) {
@@ -33,7 +29,7 @@ export class AuthService {
       'Content-Type': 'application/json'
     });
 
-    return this.http.post(this.id_secret_Url, body, { headers: head })
+    return this.http.post(this.url, body, { headers: head })
       // ...and calling .json() on the response to return data
       .map((res) => res.json())
       //..errors if any
