@@ -1,0 +1,23 @@
+{
+    "port": 1337,
+    "security": {
+        "tokenLife": 100000
+    },
+    "mongoose": {
+        "uri": "mongodb://localhost/apiDB"
+    },
+    "default": {
+        "api": {
+            "version": "v1"
+        },
+        "user": {
+            "username": "elijah_balo",
+            "password": "Capstonedb17"
+        },
+        "client": {
+            "name": "Android API v1",
+            "clientId": "android",
+            "clientSecret": "myClientSecret"
+        }
+    }
+}

@@ -37,3 +37,4 @@ import { NavComponent } from '../app/navbar/navbar.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
