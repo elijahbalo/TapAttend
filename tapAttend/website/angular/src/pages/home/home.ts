@@ -3,8 +3,10 @@ import { Router } from '@angular/router';
 
 @Component({
    selector: 'page-home',
-  templateUrl: 'home.html'
+  templateUrl: 'home.html',
+  styleUrls: ['./home.css']
 })
+
 export class HomePage {
   constructor(private router: Router) {
 
@@ -15,3 +17,4 @@ export class HomePage {
         this.router.navigateByUrl('login');
 };
 }
+
