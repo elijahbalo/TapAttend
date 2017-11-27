@@ -9,6 +9,26 @@ var mongoose = require('mongoose'),
 			unique: true,
 			required: true
 		},
+		firstname: {
+			type: String,
+			unique: true,
+			required: true
+		},
+		email: {
+			type: String,
+			unique: true,
+			required: true
+		},
+		lastname: {
+			type: String,
+			unique: true,
+			required: true
+		},
+		studentId: {
+			type: String,
+			unique: true,
+			required: true
+		},
 		hashedPassword: {
 			type: String,
 			required: true
