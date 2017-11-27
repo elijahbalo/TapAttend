@@ -11,9 +11,10 @@ import { ProfilePage } from '../profile/profile';
 export class HomePage {
  // tabBarElement: any;
  // splash = true;
-
+  currentUser;
   constructor(public navCtrl: NavController) {
     //this.tabBarElement = document.querySelector('.tabbar');
+     this.currentUser = JSON.parse(localStorage.getItem('userData'));
     }
     courseClick(){
      this.navCtrl.push(CoursePage);

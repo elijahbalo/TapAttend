@@ -22,18 +22,18 @@
       <p>
           <ion-item>
               <ion-label color="primary" floating>User Name</ion-label>
-              <ion-input></ion-input>
+              <ion-input type="text" [(ngModel)]="username"></ion-input>
             </ion-item>
       </p>
       <p>
           <ion-item>
               <ion-label color="primary" floating>Password</ion-label>
-              <ion-input></ion-input>
+              <ion-input type="password" [(ngModel)]="password"></ion-input>
             </ion-item>
       </p>
       <!-- idk how to space between buttons -->
       .
-      <button ion-button full (click)="homeClick();">
+      <button ion-button full (click)="signIn()">
         Sign In
       </button>
   

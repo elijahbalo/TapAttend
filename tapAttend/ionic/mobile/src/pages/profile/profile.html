@@ -20,7 +20,7 @@
       <p class="space" align="center"><ion-img style="width: 100px; 
         height: 100px; background: transparent !important;" src="assets/avatartheme.png">
         </ion-img> </p>
-  <h4 class="themetext" align="center"> Username</h4>
+  <h4 class="themetext" align="center"> {{currentUser.username}}</h4>
   <p>
        <!--
         <p>
@@ -41,20 +41,16 @@
         </style>
     
     <ion-item class="spacing"  >
-        <ion-label color="primary" fixed>Username</ion-label>
-        <ion-input readonly="true" type="tel" placeholder="Username" value="DanTheMan"></ion-input>
+       Username : {{currentUser.username}}
       </ion-item>
       <ion-item>
-          <ion-label color="primary" fixed>First Name</ion-label>
-          <ion-input readonly="true" type="tel" placeholder="First Name" value="Dan"></ion-input>
+        First Name: {{currentUser.firstname}}
         </ion-item>
         <ion-item>
-            <ion-label color="primary" fixed>Last Name</ion-label>
-            <ion-input readonly="true" type="tel" placeholder="Last Name" value="Ionescu" ></ion-input>
+        Last Name: {{currentUser.lastname}}
           </ion-item>
           <ion-item>
-              <ion-label color="primary" fixed>Student ID</ion-label>
-              <ion-input readonly="true" type="tel" placeholder="Student ID" value="1234567"></ion-input>
+          Student ID : {{currentUser.studentId}}
             </ion-item>
 </ion-list>
              

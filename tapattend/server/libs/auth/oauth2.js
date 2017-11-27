@@ -63,7 +63,7 @@ aserver.exchange(oauth2orize.exchange.clientCredentials(function (client, scope,
 	Client.findOne({ clientId: client.clientId }, function (err, code) {
 		if (err) { return done(err); }
 		if (client.clientSecret !== code.clientSecret) { return done(null, false); }
-		User.findOne({ username: 'korede' }, function (err, user) {
+		User.findOne({ username: 'jabs01' }, function (err, user) {
 			if (err) {
 				return done(err);
 			}
