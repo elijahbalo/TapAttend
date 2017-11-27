@@ -8,6 +8,11 @@ import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { ItemDetailsPage } from '../pages/item-details/item-details';
 import { ListPage } from '../pages/list/list';
 */
+import { HttpModule, JsonpModule } from '@angular/http'; //T
+import { AccountService } from './../util/account-service';
+import { AuthService } from './../services/auth.service';
+import { UserService } from './../services/users.service';
+import { RefresherService } from './../services/refresher.service';
 import { AboutPage } from '../pages/about/about';
 import { AddCoursePage } from '../pages/addCourse/addCourse';
 
@@ -45,6 +50,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     IonicModule.forRoot(MyApp),
   ],
   bootstrap: [IonicApp],
@@ -65,6 +71,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   ],
   providers: [
     StatusBar,
+    AuthService,
+    UserService,
+    AccountService,
+    RefresherService,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]

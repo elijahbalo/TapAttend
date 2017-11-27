@@ -15,12 +15,17 @@ import { SignUpPage1 } from '../signup1/signup1';
 export class SignUpPage {
     //splash = true;
     //secondPage = SecondPagePage;
-  
+  username;
+  password;
   constructor(public navCtrl: NavController) {
    // this.tabBarElement = document.querySelector('.tabbar');
     }
     nextClick(){
-     this.navCtrl.push(SignUpPage1);
+     this.navCtrl.push(SignUpPage1,{
+      username: this.username,
+      password: this.password
+    
+     });
   }
   
   
