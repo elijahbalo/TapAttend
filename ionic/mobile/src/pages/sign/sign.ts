@@ -40,16 +40,14 @@ export class SignPage {
     this.userService.signIn(this.username, this.password).subscribe(response => {
       localStorage.setItem('user-token', response.access_token);
       localStorage.setItem('refresh-token', response.refresh_token);
-      this.refresherService.refresh();
+
       loading.dismiss();
       let toast = this.toastCtrl.create({
         message: 'Login Successful',
         duration: 3000,
         position: 'top'
       });
-       this.userService.getCurrentUserInfo().subscribe(response => {this.sign();});
-      toast.present();
-   
+
     }, err => {
       let message = 'Cannot Login';
       if (err === 'invalid_grant') {
