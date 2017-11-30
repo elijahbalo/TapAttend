@@ -1,0 +1,14 @@
+signUp .header
+{
+    display:block;
+    width: 100%;
+    height:100px;
+    object-position: center;
+}
+
+signUp .logo img
+{
+    left:10px;
+    top: 50%;
+    position: absolute;
+}
