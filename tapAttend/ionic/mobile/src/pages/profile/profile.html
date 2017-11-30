@@ -1,0 +1,67 @@
+
+<ion-header>
+    <ion-navbar>
+      <ion-title>My Proflie</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <style>
+      .themetext {
+              color: rgba(74, 130, 243, 0.88);
+      }
+      .space {
+            margin:80px 0 0 0; 
+      }
+      </style>
+  
+  <ion-content padding>
+   <!-- <p align="center"></p><h2>This is the profile page</h2> -->
+  <p>
+      <p class="space" align="center"><ion-img style="width: 100px; 
+        height: 100px; background: transparent !important;" src="assets/avatartheme.png">
+        </ion-img> </p>
+  <h4 class="themetext" align="center"> {{currentUser.username}}</h4>
+  <p>
+       <!--
+        <p>
+                (Random Text) This starter project comes with simple tabs-based layout for apps
+                that are going to primarily use a Tabbed UI.
+              </p>
+              <p>
+                Take a look at the <code>src/pages/</code> directory to add or change tabs,
+                update any existing page or create new pages.
+              </p>
+            -->
+<ion-list>
+
+    <style>
+       .spacing {
+        margin:90px 0 0 0;      
+        }
+        </style>
+    
+    <ion-item class="spacing"  >
+       Username : {{currentUser.username}}
+      </ion-item>
+      <ion-item>
+        First Name: {{currentUser.firstname}}
+        </ion-item>
+        <ion-item>
+        Last Name: {{currentUser.lastname}}
+          </ion-item>
+          <ion-item>
+          Student ID : {{currentUser.studentId}}
+            </ion-item>
+</ion-list>
+             
+        <style>
+                .bottombutton {
+                  margin:40px 0 0 0;      
+                  }
+                </style>
+            <button class = "bottombutton" ion-button full>
+                Edit
+              </button>
+  
+  </ion-content>
+  

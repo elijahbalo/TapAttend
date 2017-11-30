@@ -1,0 +1,71 @@
+<div id="custom-overlay" [style.display]="splash ? 'flex': 'none'">
+    <div class="flb">
+      <div class="Aligner-item Aligner-item--top"></div>
+      <img src="assets/logo.png">
+      <div class="Aligner-item Aligner-item--bottom"></div>
+    </div>
+  </div>
+  
+  <style>
+    .themetext {
+            color: rgba(74, 130, 243, 0.88);
+    }
+    .space {
+          margin:25px 0 0 0; 
+    }
+    </style>
+
+  <ion-header>
+      <ion-navbar>
+        <ion-title>Personal Information</ion-title>
+      </ion-navbar>
+    </ion-header>
+    
+    <ion-content padding>
+      <h2></h2>
+      
+      <p align="center"><ion-img style="width: 300px; 
+        height: 125px; background: transparent !important;" src="assets/createAccount.png">
+        </ion-img> </p>
+      
+      <p>
+          <ion-item>
+              <ion-label color="primary" floating>First Name</ion-label>
+              <ion-input [(ngModel)]="firstname"></ion-input>
+            </ion-item>
+      </p>
+      <p>
+          <ion-item>
+              <ion-label color="primary" floating>Last Name</ion-label>
+              <ion-input [(ngModel)]="lastname"></ion-input>
+            </ion-item>
+      </p>
+      <p>
+        <ion-item>
+            <ion-label color="primary" floating>Student Number</ion-label>
+            <ion-input [(ngModel)]="studentId"></ion-input>
+          </ion-item>
+    </p>
+    <p>
+      <ion-item>
+          <ion-label color="primary" floating>Email Address</ion-label>
+          <ion-input [(ngModel)]="email"></ion-input>
+        </ion-item>
+  </p>
+      <!-- idk how to space between buttons -->
+      .
+      <button class= "space" ion-button full (click)="nextClick();">
+        Next
+      </button>
+  
+  <!-- an idea not neccesary
+      <h2 style = "text-align:left;float:left;">Sign in</h2>
+      <h2 style = "text-align:right;float:right;">New User</h2>
+      <div>
+      <div align="left"> Sign In </div>
+      <div align="right"> New User </div>
+    </div>
+  
+  -->
+    </ion-content>
+    
